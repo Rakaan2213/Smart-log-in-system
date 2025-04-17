@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container my-5 text-center">
+      <div class="group m-auto w-75 p-5 form-box d-block" id="login-form">
+        <form action="">
+          <h1>Smart Login System</h1>
+          <input
+            id="signinEmail"
+            class="form-control my-3"
+            placeholder="Enter your email"
+            type="text"
+          />
+          <input
+            id="signinPassword"
+            class="form-control my-3"
+            placeholder="Enter your password"
+            type="password"
+          />
+          <p id="errorMsg"></p>
+          <button class="btn btn-outline-info w-100 my-3">Login</button>
+          <p class="text-white">
+            Don’t have an account?
+            <a href="#" id="signUp" class="text-white">Sign Up</a>
+          </p>
+        </form>
+      </div>
+
+      <div class="group m-auto w-75 p-5 form-box d-none" id="signup-form">
+        <form action="">
+          <div class="form-box" id="regester-form">
+            <h1>Smart Login System</h1>
+            <input
+              id="signupName"
+              class="form-control my-3"
+              placeholder="Enter Your Name"
+              type="text"
+            />
+            <input
+              id="signupEmail"
+              class="form-control my-3"
+              placeholder="Enter your email"
+              type="text"
+            />
+            <input
+              id="signupPassword"
+              class="form-control my-3"
+              placeholder="Enter your password"
+              type="password"
+            />
+            <p id="signupMessage"></p>
+            <button class="btn btn-outline-info w-100 my-3">SignUp</button>
+            <p class="text-white">
+              Already have an account?
+              <a href="#" id="signIn" class="text-white">Sign in</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
